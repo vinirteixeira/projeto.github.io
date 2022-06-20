@@ -73,7 +73,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     padding:0;
   }
   body {
-    background-color: rgb(5, 41, 5);
+    background-color: rgb(7, 88, 7);
     font-family: 'Raleway', sans-serif;
   }
   #ribbon {
@@ -220,7 +220,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
   /* padrão do texto central*/
 article {
-  background-color: rgb(2, 44, 11);
+  background-color: rgb(14, 104, 33);
   background-size: cover;
   width: 100%;
   text-align: center;
