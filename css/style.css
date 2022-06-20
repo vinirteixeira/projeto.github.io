@@ -237,7 +237,7 @@ table {
   }
 
 th {
-  background-color: green;
+  background-color: rgb(18, 170, 18);
   box-sizing: unset;
   padding: 10px;
   
