@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Home</title>
+</head>
+<body>
+
+    <!--HEADER-->
+    <div id="container">
+
+        <nav>
+          <div id="logo">
+            <a href="index.html"> Hortifruti </a>
+          </div>
+          <ul>
+            <li><a href="hortalicas.html">Hortaliças</a></li>
+            <li><a href="frutas.html">Frutas</a></li>
+            <li><a href="derivadosAni.html">Derivados Animais</a></li>
+            <li><a href="derivadosVeg.html">Derivados Vegetais</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            
+          </ul>
+        </nav>
+      </div>
+    
+    <div>
+      <article>
+        <h1 class="info">HortifrutiGranjeiro</h1>
+        <p>A busca por alimentos saudáveis ou mesmo o conhecimento da procedência dos produtos tem sido um critério na hora de comprar pelos consumidores. Hoje, não só preços baixos garantem a comercialização, mas também quem os produz e de que forma são produzidos. O estabelecimento da confiança entre vendedor e comprador promove segurança para todos os envolvidos e isso em vários contextos, tais como: certeza de plantar e vender, para o agricultor e para os consumidores, garantia de entrega e segurança alimentar.</p>
+        <br>
+        <p>Neste contexto, o site busca, além de, aproximar consumidores (final ou organizacional) e produtores agrícolas, informar sobre os alimentos que nutrem o corpo e a expectativa das pessoas.</p>
+        <br>
+        <p>Os produtos ofertados estão divididos entre hortaliças, frutas e derivados. Na agricultura, muitos dos hortifrútis são sazonais, assim, estarão disponibilizadas as variedades de cada item e estes irão conter informações sobre o produto, época de cultivo e venda, quantidade disponível para o período e opcionalmente, preços.</p>
+        <br>
+        <p>Para cada alimento amostrado na página, terá disponível o nome dos produtores, sistemas de cultivos (orgânico, convencional, protegido) e onde pode ser encontrado.</p>
+        <br>
+        <p>Tendo acesso à página, o consumidor poderá escolher seu fornecedor de acordo com as exigências e necessidades que convêm.</p>
+      </article>
+    </div>
+<br>
+
+    <!--Sobre-->
+    <div class="banner">
+        <!--CARROSSEL DE IMAGENS BANNER-->
+        <Div>
+            <div class="slideshow-container">
+            
+            
+                <div class="mySlides fade">
+                <a href="hortalicas/hortalicas.html"><img src="IMG/AlfaceLisa.png" style="width:100%"></a>
+                <div class="text">Hortaliças</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <a href="frutas/frutas.html"><img src="IMG/Banana.png" style="width:100%"></a>
+                <div class="text">Frutas</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <a href="derivadosAni/derivadosAni.html"><img src="IMG/ovos.jpg" style="width:100%"></a>
+                <div class="text">Derivados Animais</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <a href="derivadosVeg/derivadosVeg.html"><img src="IMG/geleia.png" style="width:100%"></a>
+                <div class="text">Derivados Vegetais</div>
+                </div>
+            
+                            
+                <div style="display: block;">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    
+                </div>
+            
+            </div>
+            
+        
+    </div>
+
+    
+    <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+    <h4>Redes Sociais</h4>
+    <a class="w3-button w3-large w3-teal" href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+    <a class="w3-button w3-large w3-teal" href="https://twitter.com/" title="Twitter" target="_blank" ><i class="fa fa-twitter"></i></a>
+    <a class="w3-button w3-large w3-teal" href="https://myaccount.google.com/intro/profile" title="Google +"target="_blank" ><i class="fa fa-google-plus" ></i></a>
+    <a class="w3-button w3-large w3-teal" href="https://www.instagram.com/accounts/login/?source=auth_switcher" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+    <a class="w3-button w3-large w3-teal w3-hide-small" href="https://br.linkedin.com/" title="Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+    
+    
+  </footer>
+  <script>
+
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // imagens alterando a cada 3000 milisegundos, 3 segundos
+}
+
+  </script>
+</body>
+</html>
