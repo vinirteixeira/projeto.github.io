@@ -27,12 +27,12 @@ img {vertical-align: middle;
 }
 
 
-/* The dots/bullets/indicators */
+/*  dots do slide show */
 .dot {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: rgb(236, 223, 30);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -40,7 +40,7 @@ img {vertical-align: middle;
 }
 
 .active {
-  background-color: #717171;
+  background-color: #e68b14;
 }
 
 /* animação de Fading */
@@ -77,8 +77,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     font-family: 'Raleway', sans-serif;
   }
   #ribbon {
-    position:absolute;
-    background-color:rgb(82, 15, 206);
+    position:relative;
+    background-color:rgb(81, 230, 155);
     color:rgb(8, 146, 8);
     top:40px;
     left:-30px;
@@ -156,22 +156,22 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   #container > nav > ul > li > div {
     position:absolute;
     padding: 0 10px;
-    
+    border: solid rgb(11, 29, 6);
     background-color:black;
     display:none;
     background-color: rgb(4, 112, 9);
-    min-width:100px;
+    width: 120px;
   }
   
   #container > nav > ul > li > div > ul {
     margin:0px 0 10px 0;
     padding:0;
-    list-style:none;
+    list-style: disc;
   }
   #u_a_c {
     position:relative;
     width:100%;
-  /*   background-color:red; */
+  
   }
   #up_arrow {
     position:relative;
@@ -179,8 +179,10 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     height:20px;
     left:42%;
     top:-10px;
-    background-color:rgb(1, 31, 3);
+    background-color:rgb(81, 206, 90);
     transform:rotate(45deg);
+    border: solid orange;
+    border-radius: 5px;
   }
   #container > nav > ul > li> div > ul > li:hover {
     background-color:rgba(0,0,0,0.2);
